@@ -1,6 +1,6 @@
 package third;
 
-public class carManager {
+public class CarManager {
     public static void main(String[] args) {
         Car car = new Car();
         car.start();

@@ -1,4 +1,4 @@
 package secondpackageforclass;
 
-public class sameName {
+public class SameName {
 }

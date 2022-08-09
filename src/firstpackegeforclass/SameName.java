@@ -1,4 +1,4 @@
 package firstpackegeforclass;
 
-public class sameName {
+public class SameName {
 }

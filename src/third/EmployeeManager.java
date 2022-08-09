@@ -1,6 +1,6 @@
 package third;
 
-public class employeeManager {
+public class EmployeeManager {
     public static void main(String[] args) {
         Employee firstEmployee = new Employee("Nikita", "barmen", "Cherbina@gmail.com", "+38050061642", 18);
         System.out.println(firstEmployee);

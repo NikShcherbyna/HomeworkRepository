@@ -17,7 +17,7 @@ public class Cat extends Animal{
         if (runDistance > 0 && runDistance < 200){
             System.out.println("Cat" + " " + name + " " + " has ran" + runDistance + " " + "metres");
         }else{
-            System.out.println("Your cat" + name + " " + "can run not more than 200 metres and less than 0");
+            System.out.println("Your cat" + " " + name + " " + "can run not more than 200 metres and less than 0");
         }
     }
 

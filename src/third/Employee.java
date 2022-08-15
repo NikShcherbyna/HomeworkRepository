@@ -50,6 +50,41 @@ public class Employee {
         this.email = email;
     }
 
+    /*public boolean isAllowedToWork() {
+        if (age < 18) {
+            String employeeAge = Integer.toString(age);
+            String ageChecked = String.join(" ", "Employee", fullName, "must be over 18", "he/she is only", employeeAge);
+            System.out.println(ageChecked);
+        }
+        return true;
+    }
+
+    public boolean isFullName() {
+        int count = 1;
+        fullName = fullName.trim();
+        for (int i = 0; i < fullName.length(); i++) {
+            if (fullName.charAt(i) == ' ' && fullName.charAt(i + 1) != ' ') {
+                count++;
+            }
+        }
+        if (count < 3) {
+            System.out.println("Enter your full name");
+        } else if (count > 3) {
+            System.out.println("Too much words");
+        }
+        return true;
+    }
+
+    public boolean isPhoneNumberCorrect() {
+        char[] numberCheck = phoneNumber.toCharArray();
+        if (numberCheck.length < 13) {
+            System.out.println("Enter your phone number using country code");
+        } else if (numberCheck.length > 13) {
+            System.out.println("Too much numbers");
+        }
+        return true;
+    }*/
+
     public Employee(String fullName, String position, String email, String phoneNumber, int age) {
         this.fullName = fullName;
         this.position = position;

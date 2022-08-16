@@ -2,7 +2,7 @@ package fourth;
 
 public abstract class Animal {
     protected String name;
-    private int countOfAnimals;
+    private static int countOfAnimals;
 
     public Animal (String name){
         this.name = name;

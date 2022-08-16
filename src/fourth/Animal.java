@@ -10,6 +10,7 @@ public abstract class Animal {
     }
 
     public static int getCountOfAnimals() {
+        System.out.println("Total number of animals" + " " + countOfAnimals);
         return countOfAnimals;
     }
 

@@ -19,5 +19,6 @@ public class AnimalManager {
         Animal cat3 = new Cat("Mushka");
         cat3.run(300);
         Cat.getCountOfAnimals();
+        Animal.getCountOfAnimals();
     }
 }

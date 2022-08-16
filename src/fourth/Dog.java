@@ -7,8 +7,9 @@ public class Dog extends Animal{
         countOfDogs++;
     }
 
-    public static void getCountOfAnimals() {
+    public static int getCountOfAnimals() {
         System.out.println(countOfDogs + " " + "dogs created");
+        return countOfDogs;
     }
 
     @Override

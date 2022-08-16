@@ -9,6 +9,10 @@ public abstract class Animal {
         countOfAnimals++;
     }
 
+    public static int getCountOfAnimals() {
+        return countOfAnimals;
+    }
+
     public abstract void run (int runDistance);
     public abstract void swim (int swimDistance);
 }

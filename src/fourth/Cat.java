@@ -1,7 +1,7 @@
 package fourth;
 
 public class Cat extends Animal{
-    protected static int countOfCats;
+    private static int countOfCats;
 
     public Cat(String name) {
         super(name);

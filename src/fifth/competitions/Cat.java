@@ -2,13 +2,21 @@ package fifth.competitions;
 
 public class Cat extends Competitor{
     @Override
-    public void jump(){
-        System.out.println(name + " " + "has jumped the wall");
+    public void jump(Obstacles obstacles) {
+        if(maxJumpHeight >= obstacles.getObstacleSize()) {
+            System.out.println(name + " " + "has jumped through the wall on distance" + " " + obstacles.getObstacleSize());
+        }else{
+            System.out.println(name + " " + "has not jumped through the wall on height" + " " + obstacles.getObstacleSize() + " " + "the cat jumped" + " " + maxJumpHeight);
+        }
     }
 
     @Override
-    public void run(){
-        System.out.println(name + " " + "has ran the racetrack");
+    public void run(Obstacles obstacles) {
+        if(maxRunDistance >= obstacles.getObstacleSize()) {
+            System.out.println(name + " " + "has ran the racetrack on distance" + " " + obstacles.getObstacleSize());
+        }else{
+            System.out.println(name + " " + "has not ran the racetrack on height" + " " + obstacles.getObstacleSize() + " " + "the cat ran" + " " + maxJumpHeight);
+        }
     }
 
     public Cat(int maxRunDistance, int maxJumpHeight, String name){

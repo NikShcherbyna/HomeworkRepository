@@ -4,15 +4,16 @@ public abstract class Competitor{
     protected int maxRunDistance;
     protected int maxJumpHeight;
     protected String name;
+    protected boolean isDisqualified;
 
-    abstract void jump();
-    abstract void run();
+    abstract void jump(Obstacles obstacles);
+    abstract void run(Obstacles obstacles);
 
     void overcome(Obstacles obstacles){
         if (obstacles instanceof Wall){
-            this.jump();
+            this.jump(obstacles);
         } else if (obstacles instanceof Racetrack) {
-            this.run();
+            this.run(obstacles);
         }
     }
 

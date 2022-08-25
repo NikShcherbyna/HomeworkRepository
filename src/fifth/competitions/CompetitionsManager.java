@@ -8,9 +8,11 @@ public class CompetitionsManager{
         Competitor cat1 = new Cat(5, 6, "Barsik");
         Competitor[] arrayOfCompetitors = {human1, human2, robot1, cat1};
 
-        Obstacles wall1 = new Wall(3);
-        Obstacles racetrack1 = new Racetrack(5);
-        Obstacles[] arrayOfObstacles = {wall1, racetrack1};
+        Obstacles wall1 = new Wall(7);
+        Obstacles wall2 = new Wall(4);
+        Obstacles racetrack1 = new Racetrack(15);
+        Obstacles racetrack2 = new Racetrack(5);
+        Obstacles[] arrayOfObstacles = {wall1, wall2, racetrack1, racetrack2};
 
         overcomeArray(arrayOfCompetitors, arrayOfObstacles);
     }

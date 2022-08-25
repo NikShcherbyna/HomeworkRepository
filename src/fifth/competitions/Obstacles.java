@@ -6,4 +6,8 @@ public abstract class Obstacles{
     public Obstacles(int obstacleSize){
         this.obstacleSize = obstacleSize;
     }
+
+    public int getObstacleSize() {
+        return obstacleSize;
+    }
 }

@@ -18,8 +18,14 @@ public abstract class Competitor{
     }
 
     public Competitor(int maxRunDistance, int maxJumpHeight, String name){
-        this.runDistance = maxRunDistance;
-        this.jumpHeight = maxJumpHeight;
-        this.name = name;
+        if (maxJumpHeight <= 0 || maxRunDistance <= 0){
+            throw new ArithmeticException("Parameters must be more than 0");
+        }else if (name == ""){
+            throw new RuntimeException("Write the name of competitor");
+        }else {
+            this.runDistance = maxRunDistance;
+            this.jumpHeight = maxJumpHeight;
+            this.name = name;
+        }
     }
 }

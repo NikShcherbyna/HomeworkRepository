@@ -5,9 +5,9 @@ public class Human extends Competitor{
     @Override
     public void jump(Obstacles obstacles) {
         if(jumpHeight >= obstacles.getObstacleSize()) {
-            System.out.println(name + " " + "has jumped through the wall on distance" + " " + obstacles.getObstacleSize());
+            System.out.println(name + " " + "has jumped through the wall on height" + " " + obstacles.getObstacleSize());
         }else{
-            System.out.println(name + " " + "has not jumped through the wall on height" + " " + obstacles.getObstacleSize() + "and has been disqualified he/she jumped" + " " + jumpHeight);
+            System.out.println(name + " " + "has not jumped through the wall on height" + " " + obstacles.getObstacleSize() + " " + "and has been disqualified he/she jumped" + " " + jumpHeight);
             isDisqualified = true;
         }
     }

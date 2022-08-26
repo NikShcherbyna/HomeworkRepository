@@ -2,10 +2,10 @@ package fifth.figure;
 
 public class FigureManager {
     public static void main(String[] args){
-        Circle circle = new Circle(3);
+        Circle circle = new Circle(4);
         System.out.println("Circle area is" + " " + circle.area());
 
-        Square square = new Square(2);
+        Square square = new Square(3);
         System.out.println("Square area is" + " " + square.area());
 
         Triangle triangle = new Triangle(2,3);

@@ -4,6 +4,9 @@ public class Square implements FigureInterface{
     protected double a;
 
     public Square(double a) {
+        if(a <= 0){
+            throw new ArithmeticException("Side a of square must be more than 0");
+        }
         this.a = a;
     }
     @Override

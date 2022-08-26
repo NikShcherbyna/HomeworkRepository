@@ -1,8 +1,8 @@
 package fifth.competitions;
 
 public abstract class Competitor{
-    protected int maxRunDistance;
-    protected int maxJumpHeight;
+    protected int runDistance;
+    protected int jumpHeight;
     protected String name;
     protected boolean isDisqualified;
 
@@ -18,8 +18,8 @@ public abstract class Competitor{
     }
 
     public Competitor(int maxRunDistance, int maxJumpHeight, String name){
-        this.maxRunDistance = maxRunDistance;
-        this.maxJumpHeight = maxJumpHeight;
+        this.runDistance = maxRunDistance;
+        this.jumpHeight = maxJumpHeight;
         this.name = name;
     }
 }

@@ -17,7 +17,7 @@ public class Human extends Competitor{
         if(runDistance >= obstacles.getObstacleSize()) {
             System.out.println(name + " " + "has ran the racetrack on distance" + " " + obstacles.getObstacleSize());
         }else{
-            System.out.println(name + " " + "has not ran the racetrack on height" + " " + obstacles.getObstacleSize() + "and has been disqualified he/she ran" + " " + jumpHeight);
+            System.out.println(name + " " + "has not ran the racetrack on distance" + " " + obstacles.getObstacleSize() + "and has been disqualified he/she ran" + " " + jumpHeight);
             isDisqualified = true;
         }
     }

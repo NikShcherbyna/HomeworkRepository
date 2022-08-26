@@ -4,7 +4,7 @@ public class Cat extends Competitor{
     @Override
     public void jump(Obstacles obstacles) {
         if(jumpHeight >= obstacles.getObstacleSize()) {
-            System.out.println(name + " " + "has jumped through the wall on distance" + " " + obstacles.getObstacleSize());
+            System.out.println(name + " " + "has jumped through the wall on height" + " " + obstacles.getObstacleSize());
         }else{
             System.out.println(name + " " + "has not jumped through the wall on height" + " " + obstacles.getObstacleSize() + " " + "the cat jumped" + " " + jumpHeight + " " + "and has been disqualified");
             isDisqualified = true;
@@ -16,7 +16,7 @@ public class Cat extends Competitor{
         if(runDistance >= obstacles.getObstacleSize()) {
             System.out.println(name + " " + "has ran the racetrack on distance" + " " + obstacles.getObstacleSize());
         }else{
-            System.out.println(name + " " + "has not ran the racetrack on height" + " " + obstacles.getObstacleSize() + " " + "the cat ran" + " " + jumpHeight + " " + "and has been disqualified");
+            System.out.println(name + " " + "has not ran the racetrack on distance" + " " + obstacles.getObstacleSize() + " " + "the cat ran" + " " + jumpHeight + " " + "and has been disqualified");
             isDisqualified = true;
         }
     }

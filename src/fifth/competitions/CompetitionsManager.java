@@ -20,8 +20,9 @@ public class CompetitionsManager{
     public static void overcomeArray(Competitor[] arrayOfCompetitors, Obstacles[] arrayOfObstacles){
         for(Competitor eachCompetitor : arrayOfCompetitors)
             for(Obstacles eachObstacle : arrayOfObstacles){
-                if(eachCompetitor.isDisqualified != true)
-                eachCompetitor.overcome(eachObstacle);
+                if(!eachCompetitor.isDisqualified) {
+                    eachCompetitor.overcome(eachObstacle);
+                }
             }
     }
 }
